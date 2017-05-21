@@ -33,10 +33,7 @@
 #define MOMENTARY_SWITCH
 
 // Enable and select radio type attached
-#define MY_RADIO_RFM69
-#define MY_RFM69_FREQUENCY   RF69_433MHZ
-
-//#define MY_RADIO_NRF24
+#define MY_RADIO_NRF24
 
 // Enable Crypto Authentication to secure the node
 //#define MY_SIGNING_ATSHA204
