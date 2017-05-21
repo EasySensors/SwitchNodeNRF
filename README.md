@@ -74,7 +74,7 @@ Connect the Node to FTDI USB adaptor, select Pro Mini 8MHz board in Arduino IDE 
 
 The board is created by  [Koresh](https://www.openhardware.io/user/143/projects/Koresh)
 
-![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/sw1.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/swNRF.jpg?raw=true)
 ![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/sw2.jpg?raw=true)
 
 
