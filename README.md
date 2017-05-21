@@ -6,7 +6,7 @@
 ### The Switch Node (IS4B2450NRF) is a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with NRF24L01+ 2.4 GHz radio on board and build in hardware debouncer. Best sutable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project.
 
 ## Specification: ##
- - Dimensions 32x50mm
+ - Dimensions 32x58mm
  - Hardware switches controller with hardware debouncer. No need to do <br>
    any debouncer code in the sketch plus it saves some battery as no processor <br> time involved in the debouncing process
  - 4 external switch connectors
