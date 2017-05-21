@@ -1,8 +1,7 @@
 
 
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/switchNodeNRF.jpg?raw=true)
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/SwitchNode2.jpg?raw=true)
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/SwitchNode3.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/switchNodeNRF.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/SwitchNode2.jpg?raw=true)
 
 ### The Switch Node (IS4B2450NRF) is a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with NRF24L01+ 2.4 GHz radio on board and build in hardware debouncer. Best sutable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project.
 
@@ -29,7 +28,7 @@
 
 Arduino Pins|	Description
 ------------|--------------
-A0, A1, A4, A5, A7 |	Available ARDUINO analog GPIO / DIGITAL GPIO  ![](https://github.com/EasySensors/SwitchNode/blob/master/pics/a1-5s.jpg?raw=true)
+A0, A1, A4, A5, A7 |	Available ARDUINO analog GPIO / DIGITAL GPIO  ![](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/a1-5s.jpg?raw=true)
 A6 |	Connected to Battery voltage sensor (via divider)
 A3 |	Connected to  ATSHA204A
 D3 | Connected to Hardware debouncer. Triggers Interrupt<br> if any of the Switch Connectors change state
@@ -42,7 +41,7 @@ Gnd | Ground
 
 **Arduino IDE Settings**
 
-![Arduino IDE Settings](https://github.com/EasySensors/ButtonSizeNode/blob/master/pics/IDEsettings.jpg?raw=true)
+![Arduino IDE Settings](https://github.com/EasySensors/ButtonSizeNodeNRF/blob/master/pics/IDEsettings.jpg?raw=true)
 
 
 
@@ -75,9 +74,9 @@ Connect the Node to FTDI USB adaptor, select Pro Mini 8MHz board in Arduino IDE 
 
 The board is created by  [Koresh](https://www.openhardware.io/user/143/projects/Koresh)
 
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/sw1.jpg?raw=true)
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/sw2.jpg?raw=true)
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/sw3.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/sw1.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/sw2.jpg?raw=true)
+
 
 >[The board schematics Pdf link](https://github.com/EasySensors/SwitchNode/blob/master/pdf/switchInsertableNode_sch.PDF)
 
