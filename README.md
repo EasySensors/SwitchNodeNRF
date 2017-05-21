@@ -3,7 +3,7 @@
 ![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/switchNodeNRF.jpg?raw=true)
 ![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/SwitchNode2.jpg?raw=true)
 
-### The Switch Node (IS4B2450NRF) is a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with NRF24L01+ 2.4 GHz radio on board and build in hardware debouncer. Best sutable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project.
+### The NRF24 Switch Node (IS4B2450NRF) is a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with NRF24L01+ 2.4 GHz radio on board and build in hardware debouncer. Best sutable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project.
 
 ## Specification: ##
  - Dimensions 32x58mm
