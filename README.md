@@ -41,7 +41,7 @@ Gnd | Ground
 
 **Arduino IDE Settings**
 
-![Arduino IDE Settings](https://github.com/EasySensors/ButtonSizeNodeNRF/blob/master/pics/IDEsettings.jpg?raw=true)
+![Arduino IDE Settings](https://github.com/EasySensors/ButtonSizeNode/blob/master/pics/IDEsettings.jpg?raw=true)
 
 
 
