@@ -1,13 +1,10 @@
 
 
-![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/SwitchNode11.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/switchNodeNRF.jpg?raw=true)
 ![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/SwitchNode2.jpg?raw=true)
 ![enter image description here](https://github.com/EasySensors/SwitchNode/blob/master/pics/SwitchNode3.jpg?raw=true)
 
-### The Switch Node (IS4B2450) is a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with HopeRF RFM69-CW 433 MHz radio on board and build in hardware debouncer. Best sutable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project. You may think of it as Arduino Pro Mini plus all the items in the picture below:
-
-![](https://github.com/EasySensors/SwitchNode/blob/master/pics/replace.jpg?raw=true)
-
+### The Switch Node (IS4B2450NRF) is a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with NRF24L01+ 2.4 GHz radio on board and build in hardware debouncer. Best sutable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project.
 
 ## Specification: ##
  - Dimensions 32x50mm
@@ -17,8 +14,8 @@
  - Authentication security - Atmel ATSHA204A Crypto Authentication Chip
  - External JDEC EPROM
  - Dualoptiboot bootloader. Implements over the air (OTA) firmware update ability
- - RFM69-CW (low power consumption version) 433 MHz Radio transceiver
- - Footprint available for replacing  RFM69-CW with NRF24L01+ 2.4 GHz radio
+ - NRF24L01+ 2.4 GHz  Radio transceiver
+ - Footprint available for replacing NRF24L01+ 2.4 GHz  with RFM69-CW radio
  - Battery voltage sensor (via divider)
  - Externall battery connector JST 1.25 мм
  - FTDI header for programming
@@ -38,7 +35,7 @@ A3 |	Connected to  ATSHA204A
 D3 | Connected to Hardware debouncer. Triggers Interrupt<br> if any of the Switch Connectors change state
 D4, D5, D6, D7 | Connected to Switch Connectors JST type
 D8 |	Connected to CS FLASH chip (OTA) M25P40
-ANT |	RFM69 antenna
+ANT |	RFM69 antenna, not used for NRF24L01+
 Gnd | Ground
 
 
