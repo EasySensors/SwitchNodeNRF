@@ -43,6 +43,12 @@ Gnd | Ground
 
 ![Arduino IDE Settings](https://github.com/EasySensors/ButtonSizeNode/blob/master/pics/IDEsettings.jpg?raw=true)
 
+**programming FTDI adapter connection**
+
+![FTDI Power](https://github.com/EasySensors/SwitchNode/blob/master/pics/FTDIvcc3.jpg?raw=true)
+
+
+3.3V power option should be used.
 
 
 How to use it as home automation (IOT) node controller
