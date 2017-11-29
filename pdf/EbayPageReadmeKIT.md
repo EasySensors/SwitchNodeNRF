@@ -1,0 +1,37 @@
+
+
+### The Switch Node KIT is DIY set of SMD0603 componets to make a low cost wireless Arduino IDE compatible (the Atmel ATMega328P) microcontroller with NRF24L01+ 2.4 GHz radio on board and build in hardware debouncer. Best suitable for Home Automation, IOT. Could be used as switch board for radio controlling any DIY project.
+
+## The KIT content:
+- Preprogrammed ATMega328P chip with Dual optibot bootloader
+- NRF24L01+ 2.4 GHz Radio Transceiver
+- SMD componentsts 
+- PCB
+- Battery Holder
+- JST connectors 5 pcs
+- No battery
+
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/KITnrf.jpg?raw=true)
+
+
+###The soldered kit will be the Switch Node with NRF24L01+ 2.4 GHz radio on board as described below:
+
+## Features
+- Fully compatible with the Arduino IDE (PRO MINI 8 MG Hz)
+- Over the Air, firmware updates (OTA) ready. In combination with preprogrammed Dual Optiboot boot loader and on board External JDEC  EPROM\Flash memory the Node allows OTA software updates.
+- Onboard NRF24L01+ 2.4 GHz Radio Transceiver with printed antenna
+- Onboard Atmel ATSHA204A CryptoAuthentication chip makes communication with the Node very secured. ATSHA204A implements secured handshake and if handshake fails the Node will not executing any command sent to it
+- Programming header is FTDI, TTL Serial. For programming you need to have USB TTL Serial – FTDI adaptor
+- ENIG Emersion Gold finish
+- MySensors compatible. You can use superb set of scripts and libraries from [mysensors.org](http://www.mysensors.org) project  and convert the nodes into reliable network of little home sensors, relays and actuators.
+- Supports both ON/OFF and momentary switches 
+- Battery connector CR2450
+- Yes, it is open sourced. Completely.
+
+Comes with Arduino example sketch.
+
+## Overview
+If you are familiar with Arduino boards, the Switch Node is Arduino pro Mini with onboard NRF24L01+ 2.4 GHz radio, external EPROM flash and crypto authentication chip. To save some board dimensions the Switch Node does not have onboard USB-Serial converter. You need to buy FTDI Adapter for programming. External Flash chip allows burning Arduino sketch wirelessly. Onboard Atmel ATSHA204A CryptoAuthentication chip secures communication with other controllers. Some IOT ideas based on the switch node and similar controllers plus complete specs you may find here [my GitHub page](https://github.com/EasySensors/SwitchNodeNRF)
+
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/swNRF.jpg?raw=true)
+![enter image description here](https://github.com/EasySensors/SwitchNodeNRF/blob/master/pics/sw2.jpg?raw=true)

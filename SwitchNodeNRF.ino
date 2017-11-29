@@ -64,8 +64,8 @@ int relayChildID[4] = {1, NULL, NULL, NULL};
 //#define  MY_SIGNING_REQUEST_SIGNATURES
 
 // Enable OTA feature
-//#define MY_OTA_FIRMWARE_FEATURE
-//#define MY_OTA_FLASH_JDECID 0x0 //0x2020 
+#define MY_OTA_FIRMWARE_FEATURE
+#define MY_OTA_FLASH_JDECID 0x0 //0x2020 
 
 #include <SPI.h>
 #include <MySensors.h>
@@ -136,12 +136,12 @@ void setup() {
 }
 
 // Loop will iterate on changes on the BUTTON_PINs
-void loop()
-{ 
+void loop(){ 
+// Buttons state values array
+static uint8_t  readValue =  0;
+static  uint8_t last_value[4] = {NULL, NULL, NULL, NULL};
 
-  // Buttons state values array
-  static uint8_t  readValue =  0;
-  static  uint8_t last_value[4] = {NULL, NULL, NULL, NULL};
+_flash.wakeup();
  
 // Check active switches
 uint8_t retry = 5;
@@ -179,28 +179,29 @@ uint8_t retry = 5;
 #endif
 
  // Get the battery Voltage
-  int sensorValue = analogRead(BATTERY_SENSE_PIN);
-  /* 1M, 470K divider across battery and using internal ADC ref of 1.1V1
-   * ((1e6+470e3)/470e3)*1.1 = Vmax = 3.44 Volts
-   * The MySensors Lib uses internal ADC ref of 1.1V which means analogRead of the pin connected to 470kOhms Battery Devider reaches  
-   * 1023 when voltage on the divider is around 3.44 Volts. 2.5 volts is equal to 750. 2 volts is equal to 600. 
-   * RFM 69 CW works stable up to 2 volts. Assume 2.5 V is 0% and 1023 is 100% battery charge    
-   * 3.3V ~ 1023
-   * 3.0V ~ 900
-   * 2.5V ~ 750 
-   * 2.0V ~ 600
-   */
+int sensorValue = analogRead(BATTERY_SENSE_PIN);
+/* 1M, 470K divider across battery and using internal ADC ref of 1.1V1
+ * ((1e6+470e3)/470e3)*1.1 = Vmax = 3.44 Volts
+ * The MySensors Lib uses internal ADC ref of 1.1V which means analogRead of the pin connected to 470kOhms Battery Devider reaches  
+ * 1023 when voltage on the divider is around 3.44 Volts. 2.5 volts is equal to 750. 2 volts is equal to 600. 
+ * RFM 69 CW works stable up to 2 volts. Assume 2.5 V is 0% and 1023 is 100% battery charge    
+ * 3.3V ~ 1023
+ * 3.0V ~ 900
+ * 2.5V ~ 750 
+ * 2.0V ~ 600
+ */
 
-  //  Serial.print("sensorValue: "); Serial.println(sensorValue); 
-  int batteryPcnt = (sensorValue - 600)  / 3;
-  
-  batteryPcnt = batteryPcnt > 0 ? batteryPcnt:0; // Cut down negative values. Just in case the battery goes below 2V (2.5V) and the node still working. 
-  batteryPcnt = batteryPcnt < 100 ? batteryPcnt:100; // Cut down more than "100%" values. In case of ADC fluctuations. 
+//  Serial.print("sensorValue: "); Serial.println(sensorValue); 
+int batteryPcnt = (sensorValue - 600)  / 3;
 
-  if (oldBatteryPcnt != batteryPcnt ) {
-    //Power up radio after sleep
-    // sendBatteryLevel(batteryPcnt);
-    oldBatteryPcnt = batteryPcnt;
-  }
-  sleep(BUTTONS_INTERUPT_PIN - 2, RISING, 0);
+batteryPcnt = batteryPcnt > 0 ? batteryPcnt:0; // Cut down negative values. Just in case the battery goes below 2V (2.5V) and the node still working. 
+batteryPcnt = batteryPcnt < 100 ? batteryPcnt:100; // Cut down more than "100%" values. In case of ADC fluctuations. 
+
+if (oldBatteryPcnt != batteryPcnt ) {
+  //Power up radio after sleep
+  // sendBatteryLevel(batteryPcnt);
+  oldBatteryPcnt = batteryPcnt;
+}
+_flash.sleep();
+sleep(BUTTONS_INTERUPT_PIN - 2, RISING, 0);
 }
